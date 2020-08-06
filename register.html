@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>제품등록</title>
+	 <meta content="width=device-width, initial-scale=1, user-scalable=0" charset="UTF-8">
+	 <style type="text/css">
+	 	
+
+	* {
+ 	 	font-family: HanSans;
+   	
+	}
+
+	body {
+   		margin: 0;
+	}
+
+	.section {
+   		float: left;
+   		width: 100%;
+	} 
+
+
+	#header-area {
+   		float: left;
+   		height: 30%;   
+   		margin:0px;
+   		font-size:18px;
+   		line-height: 30%;
+   		padding-top: 8px;
+     background: linear-gradient(rgb(237, 199, 195),#fffff8 )
+
+   }
+	
+   span{
+    	padding-left: 50px; 
+    }
+
+    .main{
+    	float: right;
+    	width:2.6%;
+    	padding-right:75px; 
+    	padding-top:20px;
+    }
+
+   #content-area {
+     	padding-top:2%;
+   }
+	
+	#form-area {
+     	margin: auto;
+    	width: 80%;
+    	font-size:15px;
+   }
+
+   input[type="text"]{
+	   border-bottom:0.7px solid gray;
+   	  border-top:none;
+   	  border-left:none;
+      border-right:none;
+      outline: none;
+      width: 15%;
+
+    }
+
+   .submit {
+      color: rgb(86, 187, 255);
+      padding: 10px 35px;
+      font-size: 15px;
+      border-radius: 100%;
+      outline: 0;
+      border:1px solid rgb(86, 187, 255);
+      background-color: white; 
+      margin-left:50%;
+   }
+
+	.submit:hover{ 
+		color:white; 
+		background-color: rgb(86, 187, 255); 
+	}
+
+  .b{
+      border: none;
+      font-size: 15px;
+      outline:none;
+      text-align: center;
+      background-color: transparent ;
+    }
+
+
+    
+
+    .menu{
+      padding-left: 20px;
+      }
+
+  .b:hover{
+  color: white;
+  background-color: rgb(231, 76, 60); 
+
+}
+
+
+	 
+	</style>
+
+</head>
+<body>
+
+<div id="header-area" class="section">
+<span><a href="index.html"><img src="img/tws.png" width=8%; align="middle"></a>| 제품등록
+  <span class="menu">
+  <input type="button" class="b" onclick="location.href='register.html'" value="제품등록"/>
+  <input type="button" class="b" onclick="location.href='manage.html'" value="제품관리"/>
+  <input type="button" class="b" onclick="location.href='control.html'" value="재고관리" />
+  <input type="button" class="b" onclick="location.href='real.html'" value="실시간 창고현황"/>
+  </span>
+
+<a href="main.html"><img src="img/main.png" class="main"align="middle"></a>
+</span>
+<br>
+  
+</div>
+<div id="content-area" class="section">
+<div id="form-area">
+  <form method="post" action="manage.html">
+
+  제품명  &nbsp;&nbsp;
+  <input class="product" type="text" name="pname" value="">
+  <br><br>
+
+  가격  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input class="product" type="text" name="pcost" value="">
+  <br><br>
+
+  
+  이미지 &nbsp;&nbsp;
+  <input class="product" type="file" name="pimage" value="">
+  <br><br>
+ 
+  상세설명 &nbsp;
+  <textarea class="product" type="text" 
+  placeholder=" 내용을 입력해 주세요"name="pcontent" cols="50" rows="10" style="border-radius:3%;
+  border: 0.5px solid gray; 
+  background-color: white; outline: none;"></textarea>
+  <br><br>
+
+  크기  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input class="product" type="text" name="psize" value="">&nbsp;&nbsp;&nbsp;&nbsp;
+
+  무게  &nbsp;&nbsp;&nbsp;
+  <input class="product" type="text" name="pweight" value="">
+  <br><br>
+
+
+  창고보관 장소 &nbsp;
+  <input class="product" type="text" name="pstore" value="">
+  <br><br>
+
+  배송  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input class="product" type="checkbox" name="ship" value="택배"> 택배
+  <input  class="product" type="checkbox" name="ship" value="우편"> 우편
+
+  <input class="submit" type="submit" value="확인">
+ 
+  </form>
+</div>
+</div>
+
+</body>
+
+</html>

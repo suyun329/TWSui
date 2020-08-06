@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>제품관리-1</title>
+	 <meta content="width=device-width, initial-scale=1, user-scalable=0" charset="UTF-8">
+	 <style type="text/css">
+	 	
+
+	* {
+ 	 	font-family: HanSans;
+	}
+
+	body {
+   		margin: 0;
+	}
+
+	.section {
+   		float: left;
+   		width: 100%;
+	} 
+
+
+	#header-area {
+   		float: left;
+   		height: 30%;   
+   		margin:0px;
+   		font-size:18px;
+   		line-height: 30%;
+   		padding-top: 10px;
+     background: linear-gradient(rgb(237, 199, 195),#fffff8 )
+
+
+   }
+	
+   span{
+      padding-left: 50px; 
+    }
+
+    .main{
+    	float: right;
+    	width:2.6%;
+    	padding-right:75px; 
+    	padding-top:20px;
+    }
+
+   #content-area {
+     	padding-top:2%;
+      width: 92%;
+      margin: 0 auto;
+      padding-left:8%;
+
+   }
+
+
+   #product{
+    vertical-align:middle;
+   }
+
+   .pimage{
+      margin-left:7%;
+      margin-right: 2%;
+   }
+   
+   p{
+    display: inline-block;
+    vertical-align:middle;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 2%;
+   }
+
+  .srow{
+   
+    margin-top:10px;
+    display: inline-block;
+    padding-top:10px;
+  }
+
+  .d{
+    display: inline-block;
+    text-align: center;
+
+  }
+
+  .delete{
+      color:rgb(251, 215, 134);
+      font-size: 16px;
+      border-radius: 10%;
+      outline: 0;
+      border:1px solid rgb(251, 215, 134);
+      background-color: white; 
+  }
+
+
+  .delete:hover{ 
+    color:white; 
+    background-color: rgb(251, 215, 134); 
+  }
+
+  .detail{
+      color:rgb(86, 187, 255);
+      font-size: 15px;
+      border-radius: 10%;
+      outline: 0;
+      border:1px solid rgb(86, 187, 255);
+      background-color: white; 
+
+  }
+
+  .detail:hover{ 
+    color:white; 
+    background-color:rgb(86, 187, 255); 
+  }
+
+  .n{
+     font-size:20px;
+     font-weight: bold;
+  }
+
+
+  .b{
+      border: none;
+      font-size: 15px;
+      outline:none;
+      text-align: center;
+      background-color: transparent ;
+    }
+
+  .menu{
+     padding-left: 20px;
+    }
+
+  .b:hover{
+  color: white;
+  background-color: rgb(231, 76, 60);
+  }
+
+
+
+	 </style>
+</head>
+<body>
+
+<div id="header-area" class="section">
+<span><a href="index.html"><img src="img/tws.png" width=8%; align="middle"></a>| 제품관리
+
+<span class="menu">
+  <input type="button" class="b" onclick="location.href='register.html'" value="제품등록"/>
+  <input type="button" class="b" onclick="location.href='manage.html'" value="제품관리"/>
+  <input type="button" class="b" onclick="location.href='control.html'" value="재고관리" />
+  <input type="button" class="b" onclick="location.href='real.html'" value="실시간 창고현황"/>
+  </span>
+
+
+
+<a href="main.html">
+
+  <img src="img/main.png" class="main"align="middle"></a>
+</span>
+</div>
+
+<div id="content-area" class="section">
+
+<div id="product">
+ 
+  <a class="n">1</a>
+  <img src="img/a1.jpg" class="pimage" width=11.5%; align="middle">
+  
+ <p>
+   
+   <span class="frow">
+   <a name="pname">동그 목걸이</a>&nbsp;&nbsp;
+   <a name="pcost">10,000원</a> 
+   <br> 
+   </span>
+   <span class="srow">
+    보관 장소<a name="pstore"> A구역</a>&nbsp;&nbsp;
+    <input type="button" class="detail" onclick="location.href='manage_detail.html'" value="주문현황"/>
+   </span>
+
+</p>
+
+ <span class="d"><button type="button" class="delete">삭제</button></span>
+
+</div>
+
+<br>
+<div id="product">
+ 
+  <a class="n">2</a>
+  <img src="img/a2.jpg" class="pimage" width=11.5%; align="middle">
+  
+ <p>
+   
+   <span class="frow">
+   <a name="pname">별 귀걸이 </a>&nbsp;&nbsp;
+   <a name="pcost">20,000원</a> 
+   <br> 
+   </span>
+   <span class="srow">
+    보관 장소<a name="pstore"> C구역</a>&nbsp;&nbsp;
+    <input type="button" class="detail" onclick="location.href='manage_detail.html'" value="주문현황"/>
+   </span>
+
+</p>
+
+ <span class="d"><button type="button" class="delete">삭제</button></span>
+
+</div>
+
+<br>
+<div id="product">
+ 
+  <a class="n">3</a>
+  <img src="img/a3.jpg" class="pimage" width=11.5%; align="middle">
+  
+ <p>
+   
+   <span class="frow">
+   <a name="pname">실버 반지</a>&nbsp;&nbsp;
+   <a name="pcost">15,000원</a> 
+   <br> 
+   </span>
+   <span class="srow">
+    보관 장소<a name="pstore"> B구역</a>&nbsp;&nbsp;
+    <input type="button" class="detail" onclick="location.href='manage_detail.html'" value="주문현황"/>
+   </span>
+
+</p>
+
+ <span class="d"><button type="button" class="delete">삭제</button></span>
+
+</div>
+  
+   
+   
+
+</div>
+
+</body>
+
+</html>

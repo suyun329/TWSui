@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>실시간 창고현황</title>
+	 <meta content="width=device-width, initial-scale=1, user-scalable=0" charset="UTF-8">
+	 <style type="text/css">
+	 	
+
+	* {
+ 	 	font-family: HanSans;
+	}
+
+	body {
+   		margin: 0;
+	}
+
+	.section {
+   		float: left;
+   		width: 100%;
+	} 
+
+
+	#header-area {
+   		float: left;
+      height: 30%;   
+      margin:0px;
+      font-size:18px;
+      line-height: 30%;
+      padding-top: 10px;
+      background: linear-gradient(rgb(237, 199, 195),#fffff8 )
+   }
+	
+   span{
+    	padding-left: 50px; 
+    }
+
+    .main{
+    	float: right;
+    	width:2.6%;
+    	padding-right:75px; 
+    	padding-top:20px;
+    }
+
+    #content-area {
+      padding-top: 1%;
+      width: 90%;
+      margin: 0 auto;
+      padding-left:10%;
+      font-size: 18px;
+   }
+
+   #box{
+    border:none; 
+    float: left;
+    width:30%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 5%;
+   
+   }
+
+    #boxs{
+    border:none; 
+    float: left;
+    width:20%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+   
+   }
+
+  table {
+    width: 100%;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 15px;
+  }
+  th, td {
+    border: 1px solid gray;
+    padding: 10px;
+  }
+
+  th {
+    background-color: rgb(224, 224, 224);
+    font-weight: normal;
+  }
+
+  .b{
+      border: none;
+      font-size: 15px;
+      outline:none;
+      text-align: center;
+      background-color: transparent ;
+    }
+
+  .menu{
+     padding-left: 20px;
+    }
+
+  .b:hover{
+  color: white;
+  background-color: rgb(231, 76, 60);
+  }
+	 </style>
+</head>
+<body>
+
+<div id="header-area" class="section">
+<span><a href="index.html"><img src="img/tws.png" width=8%; align="middle"></a>| 실시간 창고현황
+
+ <span class="menu">
+  <input type="button" class="b" onclick="location.href='register.html'" value="제품등록"/>
+  <input type="button" class="b" onclick="location.href='manage.html'" value="제품관리"/>
+  <input type="button" class="b" onclick="location.href='control.html'" value="재고관리" />
+  <input type="button" class="b" onclick="location.href='real.html'" value="실시간 창고현황"/>
+  </span>
+
+<a href="main.html">
+
+ 
+  <img src="img/main.png" class="main"align="middle"></a>
+</span>
+</div>
+
+<div id="content-area" class="section">
+	
+  <div id="box" >
+    입고<br><br>
+     <table border="1">
+        <th>상품명</th>
+        <th>위치</th>
+        <th>수량</th>
+        <th>날짜</th>
+       
+      <tr>
+      <td><a name="pname">별 귀걸이</a></td>
+      <td><a name="pstore">A 구역</a></td>
+      <td><a name="put">1</a></td>
+      <td><a name="putdate">2020.4.13</a></td>
+      </tr>
+  
+      <tr>
+      <td>별 귀걸이 </td>
+      <td>A 구역</td>
+      <td>1</td>
+      <td>2020.4.13</td>
+      </tr>
+  
+    </table>
+
+  </div>
+  <div id="box" >
+    출고<br><br>
+     <table border="1">
+        <th>상품명</th>
+        <th>위치</th>
+        <th>수량</th>
+        <th>날짜</th>
+       
+      <tr>
+      <td><a name="pname">별 귀걸이</a></td>
+      <td><a name="pstore">A 구역</a></td>
+      <td><a name="release">1</a></td>
+      <td><a name="redate">2020.4.13</a></td>
+      </tr>
+  
+      <tr>
+      <td>별 귀걸이 </td>
+      <td>A 구역</td>
+      <td>1</td>
+      <td>2020.4.13</td>
+      </tr>
+  
+    </table>
+  </div>
+  <div id="boxs" >
+    재고<br><br>
+     <table border="1">
+        <th>상품명</th>
+        <th>위치</th>
+        <th>수량</th>
+       
+       
+      <tr>
+      <td><a name="pname">별 귀걸이</a></td>
+      <td><a name="pstore">A 구역</a></td>
+      <td><a name="stock">1</a></td>
+      
+      </tr>
+  
+      <tr>
+      <td>별 귀걸이 </td>
+      <td>A 구역</td>
+      <td>1</td>
+     
+      </tr>
+  
+    </table>
+  </div>
+
+</div>
+
+</body>
+
+</html>
